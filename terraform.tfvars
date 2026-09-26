@@ -9,4 +9,4 @@ master_max_count = 3
 master_min_count = 1
 master_vm_size = "Standard_B8s_v2"
 master_os_disk_size_gb = 30
-master_availability_zones = ["3"]
+master_availability_zones = ["1"]
