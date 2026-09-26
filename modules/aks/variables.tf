@@ -27,7 +27,7 @@ variable "oidc_issuer_enabled" {
   default     = true
 }
 
-variable "studentid" {
+variable "student24" {
   type = string
 }
 

@@ -2,7 +2,7 @@ variable "location" {
   type = string
 }
 
-variable "studentid" {
+variable "student24" {
   type = string
 }
 

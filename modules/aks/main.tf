@@ -1,10 +1,10 @@
 resource "azurerm_kubernetes_cluster" "aks-cluster" {
-  name                = "${var.studentid}-aks-${var.env}"
+  name                = "${var.student24}-aks-${var.env}"
   location            = var.location
   resource_group_name = var.resource_group_name
   dns_prefix          = var.resource_group_name
   kubernetes_version  = var.cluster_version
-  node_resource_group = "${var.studentid}-aks-nodes-rg-${var.env}"
+  node_resource_group = "${var.student24}-aks-nodes-rg-${var.env}"
   private_cluster_enabled = var.private_cluster_enabled
   node_provisioning_profile {
     mode = "Manual"
@@ -35,7 +35,7 @@ resource "azurerm_kubernetes_cluster" "aks-cluster" {
       "nodepool-type" = "system"
       "environment"   = var.env
       "nodepoolos"    = "linux"
-      "created_by"  = var.studentid
+      "created_by"  = var.student24
     }
   }
 

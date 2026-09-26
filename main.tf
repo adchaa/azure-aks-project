@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "${var.studentid}-rg-${local.env}"
+  name     = "${var.student24}-rg-${local.env}"
   location = var.location
 }
 
@@ -9,7 +9,7 @@ module "network" {
   env = local.env
   rg_name = azurerm_resource_group.rg.name
   location = var.location
-  studentid = var.studentid
+  student24 = var.student24
   vnet_address_space = var.vnet_address_space
   aks_subnet_address_prefix = var.aks_subnet_address_prefix
 }
@@ -19,7 +19,7 @@ module "aks" {
 
   env = local.env
   location = var.location
-  studentid = var.studentid
+  student24 = var.student24
   cluster_version = var.cluster_version
   resource_group_name = azurerm_resource_group.rg.name
   vnet_subnet_id = module.network.aks_subnet_id
