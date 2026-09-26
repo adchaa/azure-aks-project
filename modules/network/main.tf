@@ -4,10 +4,9 @@ resource "azurerm_virtual_network" "virtual_network" {
   location            = var.location
   resource_group_name = var.rg_name
   address_space       = var.vnet_address_space
-  tags                = var.tags
 }
 
-# ask
+# aks subnets
 resource "azurerm_subnet" "aks_subnet" {
   name                 = "${var.studentid}-aks-subnet-${var.env}"
   resource_group_name  = var.rg_name

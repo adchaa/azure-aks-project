@@ -1,4 +1,3 @@
-# creating AKS cluster
 resource "azurerm_kubernetes_cluster" "aks-cluster" {
   name                = "${var.studentid}-aks-${var.env}"
   location            = var.location
