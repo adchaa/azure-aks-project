@@ -1,2 +1,2 @@
 location = "westeurope"
-student24 = "student24" 
+studentid = "student24" 
